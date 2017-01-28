@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bE0-WK-sCc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,7 +40,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="kOe-Ev-MSP" kind="presentation" id="9pf-pc-NcZ"/>
+                                    <segue destination="kOe-Ev-MSP" kind="show" id="4mn-H1-bRZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oje-PY-HrX">
@@ -53,10 +53,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3IB-G5-5qz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
+            <point key="canvasLocation" x="840.79999999999995" y="122.78860569715144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OAl-4L-GO7">
@@ -115,7 +116,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="I8t-05-80U" kind="presentation" id="phm-ib-P3h"/>
+                                    <segue destination="I8t-05-80U" kind="show" id="bGC-Ls-TOM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g33-Wb-jHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624.79999999999995" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1564" y="122.78860569715144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Tmn-Bo-oId">
@@ -168,7 +169,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Let's start!"/>
                                 <connections>
-                                    <segue destination="4gq-au-Lam" kind="presentation" id="aYo-wP-SEK"/>
+                                    <segue destination="4gq-au-Lam" kind="show" id="VqU-DN-idR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories/Cup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1O-wa-2jW">
@@ -191,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URL-yX-YRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357.5999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="2296.8000000000002" y="122.78860569715144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YDf-G6-jtx">
@@ -231,7 +232,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Progress Graph"/>
                                 <connections>
-                                    <segue destination="wVr-fj-Cur" kind="presentation" id="o2n-hN-jHC"/>
+                                    <segue destination="wVr-fj-Cur" kind="show" id="hOO-0O-M3U"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTJ-vb-8JT">
@@ -247,12 +248,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWe-tf-Sod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="123"/>
+            <point key="canvasLocation" x="3063.1999999999998" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--Chart View Controller-->
         <scene sceneID="Voe-0a-8ed">
             <objects>
-                <viewController id="wVr-fj-Cur" sceneMemberID="viewController">
+                <viewController id="wVr-fj-Cur" customClass="ChartViewController" customModule="Automatic_Feeder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gLj-DR-uTn"/>
                         <viewControllerLayoutGuide type="bottom" id="th4-4P-Kmx"/>
@@ -260,12 +261,45 @@
                     <view key="view" contentMode="scaleToFill" id="rwO-Ig-RMB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Beq-RM-YGf" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="54" y="211" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="th4-4P-Kmx" firstAttribute="top" secondItem="Beq-RM-YGf" secondAttribute="bottom" id="2nN-vA-v2U"/>
+                            <constraint firstAttribute="trailing" secondItem="Beq-RM-YGf" secondAttribute="trailing" id="8ne-3g-U4P"/>
+                            <constraint firstItem="Beq-RM-YGf" firstAttribute="top" secondItem="gLj-DR-uTn" secondAttribute="bottom" id="8oy-57-Z6A"/>
+                            <constraint firstItem="Beq-RM-YGf" firstAttribute="leading" secondItem="rwO-Ig-RMB" secondAttribute="leading" id="Sdq-j9-DkQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="Beq-RM-YGf" id="5Lh-27-ncj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4O-Kb-fF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2908" y="123"/>
+            <point key="canvasLocation" x="3847.1999999999998" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="glL-hi-gAd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bE0-WK-sCc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OJd-bJ-E5n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pVd-Io-YDR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khr-Ad-mWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>
