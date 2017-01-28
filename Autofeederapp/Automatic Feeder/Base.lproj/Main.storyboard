@@ -103,12 +103,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbS-2Z-9oh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mbS-2Z-9oh">
                                 <rect key="frame" x="157" y="411" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n8g-cG-tsZ">
                                 <rect key="frame" x="147" y="320" width="117" height="29"/>
@@ -123,6 +123,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="kOe-Ev-MSP" eventType="touchUpInside" id="9sq-Wz-tBE"/>
                                     <segue destination="I8t-05-80U" kind="show" id="bGC-Ls-TOM"/>
                                 </connections>
                             </button>
@@ -204,15 +205,15 @@
             </objects>
             <point key="canvasLocation" x="2296.8000000000002" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--Food Calc View Controller-->
         <scene sceneID="cUy-JU-e3S">
             <objects>
-                <viewController id="sgB-Su-Oeg" sceneMemberID="viewController">
+                <viewController id="sgB-Su-Oeg" customClass="FoodCalcViewController" customModule="Charts" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QvL-1x-LtJ"/>
                         <viewControllerLayoutGuide type="bottom" id="edu-t5-Fnb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QFm-IN-bgl">
+                    <view key="view" contentMode="scaleToFill" id="QFm-IN-bgl" customClass="food">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

@@ -9,7 +9,6 @@
 import UIKit
 
 class WeightViewController: UIViewController {
-    var toPass:String!
 
     @IBOutlet weak var weightLabel: UILabel!
     
@@ -20,13 +19,18 @@ class WeightViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let value = Shared.shared.stringValue {
+            self.weightLabel.text = value
+            weightStepper.value = Double(value)!
+        }
         
         self.weightStepper.wraps = true
         self.weightStepper.autorepeat = true
-        self.weightLabel.text = String(0.0)
+        //self.weightLabel.text = String(myInformation)
         self.weightStepper.stepValue = 0.1
         
-        self.weightStepper.maximumValue = 10;
+        self.weightStepper.maximumValue = 20;
+        
         // Do any additional setup after loading the view.
 
     }

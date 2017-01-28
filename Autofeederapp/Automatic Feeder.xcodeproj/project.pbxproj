@@ -23,6 +23,7 @@
 		25C4020D1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */; };
 		25C4020E1E3D4D1B00AAFE8B /* DatePickerCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */; };
 		25C4020F1E3D4D1B00AAFE8B /* DatePickerCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25C402191E3D526000AAFE8B /* FoodCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DatePickerCell.xcodeproj; path = DatePickerCell/DatePickerCell.xcodeproj; sourceTree = "<group>"; };
 		25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTimeTableViewController.swift; sourceTree = "<group>"; };
+		25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		254AE4141E3C315C00A6DF71 /* Automatic Feeder */ = {
 			isa = PBXGroup;
 			children = (
+				25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */,
 				255E57611E3D332100F53DFE /* BluetoothSerial.swift */,
 				254AE4151E3C315C00A6DF71 /* AppDelegate.swift */,
 				255E575B1E3D005000F53DFE /* ChartViewController.swift */,
@@ -304,7 +307,7 @@
 				TargetAttributes = {
 					254AE4111E3C315B00A6DF71 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9YPRC2ATDC;
+						DevelopmentTeam = K3Y4W7BV8T;
 						ProvisioningStyle = Automatic;
 					};
 					254AE4251E3C315C00A6DF71 = {
@@ -420,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				254AE4181E3C315C00A6DF71 /* ViewController.swift in Sources */,
+				25C402191E3D526000AAFE8B /* FoodCalcViewController.swift in Sources */,
 				254AE4161E3C315C00A6DF71 /* AppDelegate.swift in Sources */,
 				25C401EF1E3D3AEE00AAFE8B /* CalcViewController.swift in Sources */,
 				255E57621E3D332100F53DFE /* BluetoothSerial.swift in Sources */,
@@ -586,7 +590,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9YPRC2ATDC;
+				DEVELOPMENT_TEAM = K3Y4W7BV8T;
 				INFOPLIST_FILE = "Automatic Feeder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -601,7 +605,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9YPRC2ATDC;
+				DEVELOPMENT_TEAM = K3Y4W7BV8T;
 				INFOPLIST_FILE = "Automatic Feeder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

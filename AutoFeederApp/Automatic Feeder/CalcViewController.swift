@@ -8,6 +8,15 @@
 
 import UIKit
 
+
+final class Shared {
+    static let shared = Shared() //lazy init, and it only runs once
+    
+    var stringValue : String!
+    var boolValue   : Bool!
+}
+
+
 class CalcViewController: UIViewController {
 
     @IBOutlet weak var breedPicker: UIPickerView!
@@ -20,6 +29,7 @@ class CalcViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
 
         // Do any additional setup after loading the view.
     }
@@ -27,6 +37,10 @@ class CalcViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        Shared.shared.stringValue = "13.3"
     }
     
 
@@ -39,14 +53,27 @@ class CalcViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        if (segue.identifier == "segueTest") {
-            let svc = segue!.destination as! WeightViewController
-            
-            svc.toPass = "hello"
-            
-        }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
-
 }
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+}
+
+
