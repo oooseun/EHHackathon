@@ -17,6 +17,7 @@
 		255E57561E3CFEE000F53DFE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255E57511E3CFEB500F53DFE /* Charts.framework */; };
 		255E57571E3CFEE000F53DFE /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 255E57511E3CFEB500F53DFE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		255E575C1E3D005000F53DFE /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255E575B1E3D005000F53DFE /* ChartViewController.swift */; };
+		FF1510AC1E3D1F1C00EB238C /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1510AB1E3D1F1C00EB238C /* BluetoothSerial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		254AE4371E3C315C00A6DF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		255E574A1E3CFEB500F53DFE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		255E575B1E3D005000F53DFE /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		FF1510AB1E3D1F1C00EB238C /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothSerial.swift; path = ../../../Jacques/Jacques/BluetoothSerial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		254AE4141E3C315C00A6DF71 /* Automatic Feeder */ = {
 			isa = PBXGroup;
 			children = (
+				FF1510AB1E3D1F1C00EB238C /* BluetoothSerial.swift */,
 				254AE4151E3C315C00A6DF71 /* AppDelegate.swift */,
 				255E575B1E3D005000F53DFE /* ChartViewController.swift */,
 				254AE4171E3C315C00A6DF71 /* ViewController.swift */,
@@ -255,6 +258,7 @@
 				TargetAttributes = {
 					254AE4111E3C315B00A6DF71 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9YPRC2ATDC;
 						ProvisioningStyle = Automatic;
 					};
 					254AE4251E3C315C00A6DF71 = {
@@ -353,6 +357,7 @@
 			files = (
 				254AE4181E3C315C00A6DF71 /* ViewController.swift in Sources */,
 				254AE4161E3C315C00A6DF71 /* AppDelegate.swift in Sources */,
+				FF1510AC1E3D1F1C00EB238C /* BluetoothSerial.swift in Sources */,
 				255E575C1E3D005000F53DFE /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +514,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9YPRC2ATDC;
 				INFOPLIST_FILE = "Automatic Feeder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Automatic-Feeder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,7 +529,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9YPRC2ATDC;
 				INFOPLIST_FILE = "Automatic Feeder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Automatic-Feeder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
