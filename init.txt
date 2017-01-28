@@ -1,2 +1,4 @@
 INIT
-18000
+Tare scale to zero: -444228
+Calibrate scale: 18000
+Set baud rate: 9600
