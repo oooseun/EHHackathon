@@ -14,6 +14,7 @@ class ViewController: UIViewController,BluetoothSerialDelegate {
     // The peripherals that have been discovered (no duplicates and sorted by asc RSSI)
     var peripherals: [(peripheral: CBPeripheral, RSSI: Float)] = []
     @IBOutlet weak var connectButtonUI: UIButton!
+    @IBOutlet weak var catWeightView: UILabel!
 
     @IBAction func connectButton(_ sender: Any) {
         if serial.centralManager.state != .poweredOn {
@@ -55,12 +56,12 @@ class ViewController: UIViewController,BluetoothSerialDelegate {
     }
     
     func serialDidDisconnect(_ peripheral: CBPeripheral, error: NSError?) {
-        connectButtonUI.text = "Connect"
+        connectButtonUI.titleLabel?.text = "Connect"
         
     }
     
     func serialDidConnect(_ peripheral: CBPeripheral) {
-        connectButtonUI.text = "Connected"
+        connectButtonUI.titleLabel?.text = "Connected"
         print("Connected to ",peripheral.name ?? "Bluetooth device")
     }
     
@@ -74,7 +75,10 @@ class ViewController: UIViewController,BluetoothSerialDelegate {
 
     func serialDidReceiveData(_ data: Data){
         //Called when data is recieved.
-        print(data)
+        let weight:String = (NSString(data: data, encoding: String.Encoding.utf8.rawValue) ?? "") as String
+        print(weight)
+        catWeightView.text = weight
+        
     }
 
     override func viewDidLoad() {
@@ -87,6 +91,11 @@ class ViewController: UIViewController,BluetoothSerialDelegate {
         // start scanning and schedule the time out
         serial.startScan()
         Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(ViewController.scanTimeOut), userInfo: nil, repeats: false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        serial.sendMessageToDevice("JASONNNNNNNNNNNNNN")
+
     }
 
     override func didReceiveMemoryWarning() {
