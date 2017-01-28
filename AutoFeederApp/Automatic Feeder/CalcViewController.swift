@@ -17,8 +17,9 @@ final class Shared {
 }
 
 
-class CalcViewController: UIViewController {
+class CalcViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
 
+    @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var breedPicker: UIPickerView!
     
     @IBOutlet weak var sexPick: UISegmentedControl!
@@ -27,9 +28,14 @@ class CalcViewController: UIViewController {
     
     @IBOutlet weak var calcButton: UIButton!
     
+    let pickerData = ["Russian blue", "American shorthair", "American Siamese"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
+        breedPicker.dataSource = self
+        breedPicker.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -43,6 +49,23 @@ class CalcViewController: UIViewController {
         Shared.shared.stringValue = "13.3"
     }
     
+    //MARK: - Delegates and data sources
+    //MARK: Data Sources
+    func numberOfComponents(in: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    //MARK: Delegates
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        myLabel.text = pickerData[row]
+    }
 
     /*
     // MARK: - Navigation
