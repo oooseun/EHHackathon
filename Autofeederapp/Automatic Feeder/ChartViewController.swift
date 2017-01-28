@@ -45,6 +45,7 @@ class ChartViewController: UIViewController {
         lineChartDataSet.circleRadius = 5.0
         lineChartDataSet.highlightColor = UIColor.red
         lineChartDataSet.drawHorizontalHighlightIndicatorEnabled = true
+        lineChartDataSet.drawFilledEnabled = true
         
         var dataSets = [IChartDataSet]()
         dataSets.append(lineChartDataSet)
@@ -58,6 +59,9 @@ class ChartViewController: UIViewController {
             return self.months[Int(index)]
         })
         lineChartView.xAxis.labelPosition = .bottom
+        lineChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        lineChartView.chartDescription?.text = ""
+        lineChartView.rightAxis.enabled = false
         
     }
 }

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE5C9BD141B4D3A37727411A04CE25C0274446DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "50BA8B189F115CE47B5FB8E19BED843B7CDCC66E" : 9223372036854775807,
+    "AE5C9BD141B4D3A37727411A04CE25C0274446DC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9D00E1F0-3BF7-49DB-95A5-06D19D266FB2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "50BA8B189F115CE47B5FB8E19BED843B7CDCC66E" : "EHHackathon\/AutoFeederApp\/DatePickerCell\/",
+    "AE5C9BD141B4D3A37727411A04CE25C0274446DC" : "EHHackathon\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Automatic Feeder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AutoFeederApp\/Automatic Feeder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DylanVann\/DatePickerCell.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50BA8B189F115CE47B5FB8E19BED843B7CDCC66E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/oooseun\/EHHackathon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE5C9BD141B4D3A37727411A04CE25C0274446DC"
+    }
+  ]
+}

@@ -17,7 +17,12 @@
 		255E57561E3CFEE000F53DFE /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255E57511E3CFEB500F53DFE /* Charts.framework */; };
 		255E57571E3CFEE000F53DFE /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 255E57511E3CFEB500F53DFE /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		255E575C1E3D005000F53DFE /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255E575B1E3D005000F53DFE /* ChartViewController.swift */; };
-		FF1510AC1E3D1F1C00EB238C /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1510AB1E3D1F1C00EB238C /* BluetoothSerial.swift */; };
+		255E57621E3D332100F53DFE /* BluetoothSerial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255E57611E3D332100F53DFE /* BluetoothSerial.swift */; };
+		25C401EF1E3D3AEE00AAFE8B /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C401EE1E3D3AEE00AAFE8B /* CalcViewController.swift */; };
+		25C401F11E3D3D1F00AAFE8B /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */; };
+		25C4020D1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */; };
+		25C4020E1E3D4D1B00AAFE8B /* DatePickerCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */; };
+		25C4020F1E3D4D1B00AAFE8B /* DatePickerCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,27 @@
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
 		};
+		25C402081E3D4C7700AAFE8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B32725311B02F87F00F7F3B4;
+			remoteInfo = DatePickerCell;
+		};
+		25C4020A1E3D4C7700AAFE8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B327253C1B02F87F00F7F3B4;
+			remoteInfo = DatePickerCellTests;
+		};
+		25C402101E3D4D1B00AAFE8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B32725301B02F87F00F7F3B4;
+			remoteInfo = DatePickerCell;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +98,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				25C4020F1E3D4D1B00AAFE8B /* DatePickerCell.framework in Embed Frameworks */,
 				255E57571E3CFEE000F53DFE /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -95,7 +122,11 @@
 		254AE4371E3C315C00A6DF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		255E574A1E3CFEB500F53DFE /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		255E575B1E3D005000F53DFE /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
-		FF1510AB1E3D1F1C00EB238C /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BluetoothSerial.swift; path = ../../../Jacques/Jacques/BluetoothSerial.swift; sourceTree = "<group>"; };
+		255E57611E3D332100F53DFE /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
+		25C401EE1E3D3AEE00AAFE8B /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
+		25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DatePickerCell.xcodeproj; path = DatePickerCell/DatePickerCell.xcodeproj; sourceTree = "<group>"; };
+		25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTimeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C4020E1E3D4D1B00AAFE8B /* DatePickerCell.framework in Frameworks */,
 				255E57561E3CFEE000F53DFE /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +159,7 @@
 		254AE4091E3C315B00A6DF71 = {
 			isa = PBXGroup;
 			children = (
+				25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */,
 				255E574A1E3CFEB500F53DFE /* Charts.xcodeproj */,
 				254AE4141E3C315C00A6DF71 /* Automatic Feeder */,
 				254AE4291E3C315C00A6DF71 /* Automatic FeederTests */,
@@ -148,14 +181,17 @@
 		254AE4141E3C315C00A6DF71 /* Automatic Feeder */ = {
 			isa = PBXGroup;
 			children = (
-				FF1510AB1E3D1F1C00EB238C /* BluetoothSerial.swift */,
+				255E57611E3D332100F53DFE /* BluetoothSerial.swift */,
 				254AE4151E3C315C00A6DF71 /* AppDelegate.swift */,
 				255E575B1E3D005000F53DFE /* ChartViewController.swift */,
+				25C401EE1E3D3AEE00AAFE8B /* CalcViewController.swift */,
 				254AE4171E3C315C00A6DF71 /* ViewController.swift */,
 				254AE4191E3C315C00A6DF71 /* Main.storyboard */,
+				25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */,
 				254AE41C1E3C315C00A6DF71 /* Assets.xcassets */,
 				254AE41E1E3C315C00A6DF71 /* LaunchScreen.storyboard */,
 				254AE4211E3C315C00A6DF71 /* Info.plist */,
+				25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */,
 			);
 			path = "Automatic Feeder";
 			sourceTree = "<group>";
@@ -188,6 +224,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		25C402041E3D4C7700AAFE8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */,
+				25C4020B1E3D4C7700AAFE8B /* DatePickerCellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +249,7 @@
 			);
 			dependencies = (
 				255E57591E3CFEE000F53DFE /* PBXTargetDependency */,
+				25C402111E3D4D1B00AAFE8B /* PBXTargetDependency */,
 			);
 			name = "Automatic Feeder";
 			productName = "Automatic Feeder";
@@ -289,6 +335,10 @@
 					ProductGroup = 255E574B1E3CFEB500F53DFE /* Products */;
 					ProjectRef = 255E574A1E3CFEB500F53DFE /* Charts.xcodeproj */;
 				},
+				{
+					ProductGroup = 25C402041E3D4C7700AAFE8B /* Products */;
+					ProjectRef = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -319,6 +369,20 @@
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
 			remoteRef = 255E57541E3CFEB500F53DFE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DatePickerCell.framework;
+			remoteRef = 25C402081E3D4C7700AAFE8B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25C4020B1E3D4C7700AAFE8B /* DatePickerCellTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DatePickerCellTests.xctest;
+			remoteRef = 25C4020A1E3D4C7700AAFE8B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -357,7 +421,10 @@
 			files = (
 				254AE4181E3C315C00A6DF71 /* ViewController.swift in Sources */,
 				254AE4161E3C315C00A6DF71 /* AppDelegate.swift in Sources */,
-				FF1510AC1E3D1F1C00EB238C /* BluetoothSerial.swift in Sources */,
+				25C401EF1E3D3AEE00AAFE8B /* CalcViewController.swift in Sources */,
+				255E57621E3D332100F53DFE /* BluetoothSerial.swift in Sources */,
+				25C401F11E3D3D1F00AAFE8B /* WeightViewController.swift in Sources */,
+				25C4020D1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift in Sources */,
 				255E575C1E3D005000F53DFE /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +462,11 @@
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = 255E57581E3CFEE000F53DFE /* PBXContainerItemProxy */;
+		};
+		25C402111E3D4D1B00AAFE8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DatePickerCell;
+			targetProxy = 25C402101E3D4D1B00AAFE8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
