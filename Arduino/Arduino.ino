@@ -1,12 +1,19 @@
 #include <SoftwareSerial.h>
+#include <Servo.h>
 
 SoftwareSerial scaleSerial(8, 9); // RX | TX
 SoftwareSerial BTSerial(10, 11); // RX | TX
+
+Servo myservo;  // create servo object to control a servo
+int pos = 0;    // variable to store the servo position
 
 
 float  animalWeight;
 String weightString = "";
 char   BTArray[5];
+
+float  servingSize;
+String servingString = "";
 
 void setup()
 {
@@ -23,6 +30,21 @@ void setup()
   scaleSerial.println("1");
   scaleSerial.println("2");
   delay(1000);
+
+  // Servo to pin
+  myservo.attach(5);  // attaches the servo on pin 9 to the servo object
+  pinMode(13, OUTPUT);
+  digitalWrite(13, HIGH);
+  
+  pinMode(12, OUTPUT);
+  digitalWrite(12, HIGH);
+
+    myservo.write(90);
+    delay(1000);
+    myservo.write(180);
+    delay(3000);
+    myservo.write(90);
+    //while(1);
 }
 
 void loop()
@@ -67,7 +89,39 @@ void loop()
   // Read Stuff!!!
   if (BTSerial.available())
   {
+    Serial.print("TESTING");
+    for (int i = 0; i < 6; i++)
+      {
+        while(!BTSerial.available());
+        c = BTSerial.read();
+        servingString += c;
+      }
+      servingSize = servingString.toFloat();
+      Serial.print("SERVING SIZE");
+      Serial.println(servingSize);
   }
+
+/***************** SERVO *****************/
+  if (Serial.available())
+  {
+    c = 'p';//Serial.read();
+    if (c == 'x')
+    {
+      for (pos = 0; pos <= 90; pos += 1) { // goes from 0 degrees to 180 degrees
+        // in steps of 1 degree
+        myservo.write(pos);              // tell servo to go to position in variable 'pos'
+        delay(30);                       // waits 15ms for the servo to reach the position
+      }
+      for (pos = 90; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+        myservo.write(pos);              // tell servo to go to position in variable 'pos'
+        delay(30);                       // waits 15ms for the servo to reach the position
+      }
+    }
+  }
+
+  //myservo.write(0);
+  //delay(1000);
+  //myservo.write(90);
   
 }
 
