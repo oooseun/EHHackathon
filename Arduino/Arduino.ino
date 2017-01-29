@@ -6,7 +6,7 @@ SoftwareSerial BTSerial(10, 11); // RX | TX
 
 Servo myservo;  // create servo object to control a servo
 int pos = 0;    // variable to store the servo position
-
+int servoSpun = 0;
 
 float  animalWeight;
 String weightString = "";
@@ -42,7 +42,7 @@ void setup()
   digitalWrite(12, HIGH);
 
   lastTime = millis();
-//    myservo.write(90);
+  myservo.write(90);
 //    delay(1000);
 //    myservo.write(180);
 //    delay(3000);
@@ -90,47 +90,47 @@ void loop()
 
 /***************** BTOOTH *****************/
   // Read Stuff!!!
-//  if (millis() - lastTime > 20000)
+//  if (millis() - lastTime > 30000)
 //  {
-//    //scaleSerial.println("x");
+//    scaleSerial.println("x");
 //    scaleSerial.end();    
 //
 //    int btmillis = millis();
 //    while (millis() - btmillis < 3000)
 //    {
-      if (BTSerial.available())
-      {
-        Serial.print("TESTING");
-        for (int i = 0; i < 6; i++)
-          {
-            while(!BTSerial.available());
-            c = BTSerial.read();
-            servingString += c;
-          }
-          servingSize = servingString.toFloat();
-          Serial.print("SERVING SIZE");
-          Serial.println(servingSize);
-      }
+      
 //    }
 //    scaleSerial.println("2");
 //
 //    SoftwareSerial scaleSerial(8,9);    
 //    lastTime = millis();
 //  }
+
+  if (BTSerial.available())
+  {
+    Serial.print("TESTING");
+    for (int i = 0; i < 6; i++)
+      {
+        while(!BTSerial.available());
+        c = BTSerial.read();
+        servingString += c;
+      }
+      servingSize = servingString.toFloat();
+      Serial.print("SERVING SIZE");
+      Serial.println(servingSize);
+  }
   
 
 /***************** SERVO *****************/
-  if (Serial.available())
+  if (millis() - lastTime > 10000 && animalWeight > 2 && servoSpun == 0)
   {
-    c = Serial.read();
-    if (c == 'x')
-    {
-      //myservo.write(90);
-      //delay(2000);
-      myservo.write(180);
-      delay(2000);
+    servoSpun = 1;
+      myservo.write(125);
+      delay(1800);
       myservo.write(90);
-    }
+      delay(2000);
+      //servoSpun = 0;
+ //     lastTime = millis();
   }
 
   //myservo.write(0);
