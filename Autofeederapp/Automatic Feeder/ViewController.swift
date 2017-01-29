@@ -9,6 +9,15 @@
 import UIKit
 import CoreBluetooth
 
+final class Shared {
+    static let shared = Shared() //lazy init, and it only runs once
+    
+    var initialWeight : Double!
+    var targetWeight   : Double!
+    var targetCal       : Double!
+    var cupsToDispense : Double!
+    
+}
 
 class ViewController: UIViewController,BluetoothSerialDelegate {
     // The peripherals that have been discovered (no duplicates and sorted by asc RSSI)
@@ -78,11 +87,13 @@ class ViewController: UIViewController,BluetoothSerialDelegate {
         let weight:String = (NSString(data: data, encoding: String.Encoding.utf8.rawValue) ?? "") as String
         print(weight)
         catWeightView.text = weight
+        Shared.shared.initialWeight = Double(weight)
         
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Shared.shared.initialWeight = 20.0 //dummy data to start
         // init serial
         serial = BluetoothSerial(delegate: self)
         serial.writeType = .withResponse

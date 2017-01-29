@@ -10,6 +10,10 @@ import UIKit
 
 class FoodCalcViewController: UIViewController {
 
+    @IBOutlet weak var nameBrand: UITextField!
+    
+    @IBOutlet weak var cupCal: UITextField!
+    @IBOutlet weak var timesFed: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboard()
@@ -23,6 +27,26 @@ class FoodCalcViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func buttonPressed(_ sender: Any) {
+            //does calculation
+            if let value1 = Shared.shared.targetWeight, let value2 = Shared.shared.initialWeight{
+                let targetWeight = value1
+                let initialWeight = value2
+                if targetWeight < initialWeight {
+                    let targetCal = 20 * initialWeight * 0.99
+                    Shared.shared.targetCal = targetCal
+                    var feedFreq: Double = Double(timesFed.text!)!
+                    if feedFreq > 5 {
+                        feedFreq = 5.0
+                    }
+                    let cups = ((targetCal / Double(cupCal.text!)!) / feedFreq)
+                    Shared.shared.cupsToDispense = cups
+                    serial.sendMessageToDevice(String(cups))
+                }
+            }
+        
+        
+    }
 
     /*
     // MARK: - Navigation

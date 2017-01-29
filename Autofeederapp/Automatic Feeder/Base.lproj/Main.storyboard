@@ -216,7 +216,7 @@
         <!--Food Calc View Controller-->
         <scene sceneID="cUy-JU-e3S">
             <objects>
-                <viewController id="sgB-Su-Oeg" customClass="FoodCalcViewController" customModule="Charts" sceneMemberID="viewController">
+                <viewController id="sgB-Su-Oeg" customClass="FoodCalcViewController" customModule="Automatic_Feeder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QvL-1x-LtJ"/>
                         <viewControllerLayoutGuide type="bottom" id="edu-t5-Fnb"/>
@@ -244,6 +244,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Let's specify some times"/>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="sgB-Su-Oeg" eventType="touchUpInside" id="IAO-mf-RgM"/>
                                     <segue destination="39H-Zu-0ha" kind="show" id="7gs-Y6-lZw"/>
                                 </connections>
                             </button>
@@ -259,7 +260,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Times fed per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-6I-aPm">
                                 <rect key="frame" x="23" y="470" width="138" height="21"/>
@@ -273,11 +274,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="cupCal" destination="VHu-86-7bp" id="QZ7-pG-c7l"/>
+                        <outlet property="nameBrand" destination="mHp-wq-MbI" id="fpk-1D-Vo6"/>
+                        <outlet property="timesFed" destination="yjS-wN-8LG" id="D1C-6y-iWb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CO-95-rMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

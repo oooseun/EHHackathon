@@ -8,15 +8,6 @@
 
 import UIKit
 
-
-final class Shared {
-    static let shared = Shared() //lazy init, and it only runs once
-    
-    var stringValue : String!
-    var boolValue   : Bool!
-}
-
-
 class CalcViewController: UIViewController, UIPickerViewDataSource,UIPickerViewDelegate {
 
     @IBOutlet weak var myLabel: UILabel!
@@ -46,7 +37,7 @@ class CalcViewController: UIViewController, UIPickerViewDataSource,UIPickerViewD
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
-        Shared.shared.stringValue = "13.3"
+        Shared.shared.targetWeight = 13.3
     }
     
     //MARK: - Delegates and data sources

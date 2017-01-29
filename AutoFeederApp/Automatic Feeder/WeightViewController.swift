@@ -19,9 +19,9 @@ class WeightViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let value = Shared.shared.stringValue {
-            self.weightLabel.text = value
-            weightStepper.value = Double(value)!
+        if let value = Shared.shared.targetWeight {
+            self.weightLabel.text = String(value)
+            weightStepper.value = value
         }
         
         self.weightStepper.wraps = true
@@ -42,6 +42,7 @@ class WeightViewController: UIViewController {
     
     @IBAction func stepperValueChange(_ sender: UIStepper) {
         weightLabel.text = Double(sender.value).description
+        Shared.shared.targetWeight = Double(weightLabel.text!)
     }
 
     /*
