@@ -1,11 +1,12 @@
 #include <SoftwareSerial.h>
 
-SoftwareSerial scaleSerial(5, 6); // RX | TX
+SoftwareSerial scaleSerial(8, 9); // RX | TX
 SoftwareSerial BTSerial(10, 11); // RX | TX
 
 
 float  animalWeight;
 String weightString = "";
+char   BTArray[5];
 
 void setup()
 {
@@ -13,6 +14,7 @@ void setup()
   //digitalWrite(9, HIGH);
   Serial.begin(9600);
   Serial.println("Enter AT commands:");
+  BTSerial.begin(9600);
   scaleSerial.begin(9600);  // HC-05 default speed in AT command more
 
   // tare scale... check if scaleSerial rdy?
@@ -32,6 +34,8 @@ void loop()
 //    scaleSerial.print(c);
 //  }
 
+/***************** SCALE *****************/
+
   if (scaleSerial.available())
   {
     c = scaleSerial.read();
@@ -48,10 +52,23 @@ void loop()
       
       animalWeight = weightString.toFloat();
       Serial.println(animalWeight);
+
+      // Send weight
+      weightString.toCharArray(BTArray, 4);
+      BTArray[4] = '\0';
+      BTSerial.write(BTArray);
+      
       weightString = "";
     }
     //Serial.print(c);
   }
+
+/***************** BTOOTH *****************/
+  // Read Stuff!!!
+  if (BTSerial.available())
+  {
+  }
+  
 }
 
 
