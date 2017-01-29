@@ -21,8 +21,6 @@
 		25C401EF1E3D3AEE00AAFE8B /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C401EE1E3D3AEE00AAFE8B /* CalcViewController.swift */; };
 		25C401F11E3D3D1F00AAFE8B /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */; };
 		25C4020D1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */; };
-		25C4020E1E3D4D1B00AAFE8B /* DatePickerCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */; };
-		25C4020F1E3D4D1B00AAFE8B /* DatePickerCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25C402191E3D526000AAFE8B /* FoodCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,26 +67,19 @@
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
 		};
-		25C402081E3D4C7700AAFE8B /* PBXContainerItemProxy */ = {
+		FF37624E1E3D6C630004E283 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
+			containerPortal = FF3762471E3D6C620004E283 /* DatePickerCell.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B32725311B02F87F00F7F3B4;
 			remoteInfo = DatePickerCell;
 		};
-		25C4020A1E3D4C7700AAFE8B /* PBXContainerItemProxy */ = {
+		FF3762501E3D6C630004E283 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
+			containerPortal = FF3762471E3D6C620004E283 /* DatePickerCell.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B327253C1B02F87F00F7F3B4;
 			remoteInfo = DatePickerCellTests;
-		};
-		25C402101E3D4D1B00AAFE8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B32725301B02F87F00F7F3B4;
-			remoteInfo = DatePickerCell;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -99,7 +90,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				25C4020F1E3D4D1B00AAFE8B /* DatePickerCell.framework in Embed Frameworks */,
 				255E57571E3CFEE000F53DFE /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -126,9 +116,9 @@
 		255E57611E3D332100F53DFE /* BluetoothSerial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSerial.swift; sourceTree = "<group>"; };
 		25C401EE1E3D3AEE00AAFE8B /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
 		25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
-		25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DatePickerCell.xcodeproj; path = DatePickerCell/DatePickerCell.xcodeproj; sourceTree = "<group>"; };
 		25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTimeTableViewController.swift; sourceTree = "<group>"; };
 		25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCalcViewController.swift; sourceTree = "<group>"; };
+		FF3762471E3D6C620004E283 /* DatePickerCell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DatePickerCell.xcodeproj; path = ../DatePickerCell/DatePickerCell.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C4020E1E3D4D1B00AAFE8B /* DatePickerCell.framework in Frameworks */,
 				255E57561E3CFEE000F53DFE /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,7 +150,7 @@
 		254AE4091E3C315B00A6DF71 = {
 			isa = PBXGroup;
 			children = (
-				25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */,
+				FF3762471E3D6C620004E283 /* DatePickerCell.xcodeproj */,
 				255E574A1E3CFEB500F53DFE /* Charts.xcodeproj */,
 				254AE4141E3C315C00A6DF71 /* Automatic Feeder */,
 				254AE4291E3C315C00A6DF71 /* Automatic FeederTests */,
@@ -227,11 +216,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		25C402041E3D4C7700AAFE8B /* Products */ = {
+		FF3762481E3D6C620004E283 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */,
-				25C4020B1E3D4C7700AAFE8B /* DatePickerCellTests.xctest */,
+				FF37624F1E3D6C630004E283 /* DatePickerCell.framework */,
+				FF3762511E3D6C630004E283 /* DatePickerCellTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,7 +241,6 @@
 			);
 			dependencies = (
 				255E57591E3CFEE000F53DFE /* PBXTargetDependency */,
-				25C402111E3D4D1B00AAFE8B /* PBXTargetDependency */,
 			);
 			name = "Automatic Feeder";
 			productName = "Automatic Feeder";
@@ -307,7 +295,7 @@
 				TargetAttributes = {
 					254AE4111E3C315B00A6DF71 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = K3Y4W7BV8T;
+						DevelopmentTeam = 9YPRC2ATDC;
 						ProvisioningStyle = Automatic;
 					};
 					254AE4251E3C315C00A6DF71 = {
@@ -339,8 +327,8 @@
 					ProjectRef = 255E574A1E3CFEB500F53DFE /* Charts.xcodeproj */;
 				},
 				{
-					ProductGroup = 25C402041E3D4C7700AAFE8B /* Products */;
-					ProjectRef = 25C402031E3D4C7700AAFE8B /* DatePickerCell.xcodeproj */;
+					ProductGroup = FF3762481E3D6C620004E283 /* Products */;
+					ProjectRef = FF3762471E3D6C620004E283 /* DatePickerCell.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -374,18 +362,18 @@
 			remoteRef = 255E57541E3CFEB500F53DFE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		25C402091E3D4C7700AAFE8B /* DatePickerCell.framework */ = {
+		FF37624F1E3D6C630004E283 /* DatePickerCell.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DatePickerCell.framework;
-			remoteRef = 25C402081E3D4C7700AAFE8B /* PBXContainerItemProxy */;
+			remoteRef = FF37624E1E3D6C630004E283 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		25C4020B1E3D4C7700AAFE8B /* DatePickerCellTests.xctest */ = {
+		FF3762511E3D6C630004E283 /* DatePickerCellTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = DatePickerCellTests.xctest;
-			remoteRef = 25C4020A1E3D4C7700AAFE8B /* PBXContainerItemProxy */;
+			remoteRef = FF3762501E3D6C630004E283 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -466,11 +454,6 @@
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = 255E57581E3CFEE000F53DFE /* PBXContainerItemProxy */;
-		};
-		25C402111E3D4D1B00AAFE8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DatePickerCell;
-			targetProxy = 25C402101E3D4D1B00AAFE8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -590,7 +573,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K3Y4W7BV8T;
+				DEVELOPMENT_TEAM = 9YPRC2ATDC;
 				INFOPLIST_FILE = "Automatic Feeder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -605,7 +588,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K3Y4W7BV8T;
+				DEVELOPMENT_TEAM = 9YPRC2ATDC;
 				INFOPLIST_FILE = "Automatic Feeder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
