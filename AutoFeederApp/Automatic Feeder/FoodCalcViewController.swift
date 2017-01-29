@@ -30,7 +30,7 @@ class FoodCalcViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
             //does calculation
             if let value1 = Shared.shared.targetWeight, let value2 = Shared.shared.initialWeight{
-                let targetWeight = value1
+                let targetWeight = 3.0
                 let initialWeight = value2
                 if targetWeight < initialWeight {
                     let targetCal = 20 * initialWeight * 0.99
@@ -40,12 +40,18 @@ class FoodCalcViewController: UIViewController {
                         feedFreq = 5.0
                     }
                     let cups = ((targetCal / Double(cupCal.text!)!) / feedFreq)
-                    Shared.shared.cupsToDispense = cups
-                    serial.sendMessageToDevice(String(cups))
+                    let roundedCups = Double(round(1000*cups)/1000)
+                    Shared.shared.cupsToDispense = roundedCups
+                    Timer.scheduledTimer(timeInterval:1.0, target:self, selector: "repeatMessage", userInfo: nil, repeats: true)
                 }
             }
         
         
+    }
+    
+    func repeatMessage(){
+        let cupString = String(Shared.shared.cupsToDispense) + "\n"
+        serial.sendMessageToDevice(cupString)
     }
 
     /*
