@@ -10,7 +10,6 @@
 		254AE4161E3C315C00A6DF71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE4151E3C315C00A6DF71 /* AppDelegate.swift */; };
 		254AE4181E3C315C00A6DF71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE4171E3C315C00A6DF71 /* ViewController.swift */; };
 		254AE41B1E3C315C00A6DF71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254AE4191E3C315C00A6DF71 /* Main.storyboard */; };
-		254AE41D1E3C315C00A6DF71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254AE41C1E3C315C00A6DF71 /* Assets.xcassets */; };
 		254AE4201E3C315C00A6DF71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254AE41E1E3C315C00A6DF71 /* LaunchScreen.storyboard */; };
 		254AE42B1E3C315C00A6DF71 /* Automatic_FeederTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE42A1E3C315C00A6DF71 /* Automatic_FeederTests.swift */; };
 		254AE4361E3C315C00A6DF71 /* Automatic_FeederUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AE4351E3C315C00A6DF71 /* Automatic_FeederUITests.swift */; };
@@ -22,6 +21,10 @@
 		25C401F11E3D3D1F00AAFE8B /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */; };
 		25C4020D1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */; };
 		25C402191E3D526000AAFE8B /* FoodCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */; };
+		FF3762521E3D72390004E283 /* DatePickerCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF37624F1E3D6C630004E283 /* DatePickerCell.framework */; };
+		FF3762531E3D72390004E283 /* DatePickerCell.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF37624F1E3D6C630004E283 /* DatePickerCell.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF3762591E3D756B0004E283 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3762581E3D756B0004E283 /* Images.xcassets */; };
+		FF37625B1E3D76D00004E283 /* launchScreen2.png in Resources */ = {isa = PBXBuildFile; fileRef = FF37625A1E3D76D00004E283 /* launchScreen2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,13 @@
 			remoteGlobalIDString = B327253C1B02F87F00F7F3B4;
 			remoteInfo = DatePickerCellTests;
 		};
+		FF3762541E3D72390004E283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF3762471E3D6C620004E283 /* DatePickerCell.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B32725301B02F87F00F7F3B4;
+			remoteInfo = DatePickerCell;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +100,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FF3762531E3D72390004E283 /* DatePickerCell.framework in Embed Frameworks */,
 				255E57571E3CFEE000F53DFE /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -102,7 +113,6 @@
 		254AE4151E3C315C00A6DF71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		254AE4171E3C315C00A6DF71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		254AE41A1E3C315C00A6DF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		254AE41C1E3C315C00A6DF71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254AE41F1E3C315C00A6DF71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		254AE4211E3C315C00A6DF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		254AE4261E3C315C00A6DF71 /* Automatic FeederTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Automatic FeederTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +129,8 @@
 		25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTimeTableViewController.swift; sourceTree = "<group>"; };
 		25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCalcViewController.swift; sourceTree = "<group>"; };
 		FF3762471E3D6C620004E283 /* DatePickerCell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DatePickerCell.xcodeproj; path = ../DatePickerCell/DatePickerCell.xcodeproj; sourceTree = "<group>"; };
+		FF3762581E3D756B0004E283 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF37625A1E3D76D00004E283 /* launchScreen2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreen2.png; path = ../../assets/launchScreen2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3762521E3D72390004E283 /* DatePickerCell.framework in Frameworks */,
 				255E57561E3CFEE000F53DFE /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +185,7 @@
 		254AE4141E3C315C00A6DF71 /* Automatic Feeder */ = {
 			isa = PBXGroup;
 			children = (
+				FF37625A1E3D76D00004E283 /* launchScreen2.png */,
 				25C402181E3D526000AAFE8B /* FoodCalcViewController.swift */,
 				255E57611E3D332100F53DFE /* BluetoothSerial.swift */,
 				254AE4151E3C315C00A6DF71 /* AppDelegate.swift */,
@@ -180,10 +194,10 @@
 				254AE4171E3C315C00A6DF71 /* ViewController.swift */,
 				254AE4191E3C315C00A6DF71 /* Main.storyboard */,
 				25C401F01E3D3D1F00AAFE8B /* WeightViewController.swift */,
-				254AE41C1E3C315C00A6DF71 /* Assets.xcassets */,
 				254AE41E1E3C315C00A6DF71 /* LaunchScreen.storyboard */,
 				254AE4211E3C315C00A6DF71 /* Info.plist */,
 				25C4020C1E3D4CB500AAFE8B /* FeedTimeTableViewController.swift */,
+				FF3762581E3D756B0004E283 /* Images.xcassets */,
 			);
 			path = "Automatic Feeder";
 			sourceTree = "<group>";
@@ -241,6 +255,7 @@
 			);
 			dependencies = (
 				255E57591E3CFEE000F53DFE /* PBXTargetDependency */,
+				FF3762551E3D72390004E283 /* PBXTargetDependency */,
 			);
 			name = "Automatic Feeder";
 			productName = "Automatic Feeder";
@@ -383,8 +398,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3762591E3D756B0004E283 /* Images.xcassets in Resources */,
+				FF37625B1E3D76D00004E283 /* launchScreen2.png in Resources */,
 				254AE4201E3C315C00A6DF71 /* LaunchScreen.storyboard in Resources */,
-				254AE41D1E3C315C00A6DF71 /* Assets.xcassets in Resources */,
 				254AE41B1E3C315C00A6DF71 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +470,11 @@
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = 255E57581E3CFEE000F53DFE /* PBXContainerItemProxy */;
+		};
+		FF3762551E3D72390004E283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DatePickerCell;
+			targetProxy = FF3762541E3D72390004E283 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
