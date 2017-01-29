@@ -15,6 +15,8 @@ char   BTArray[5];
 float  servingSize;
 String servingString = "";
 
+int lastTime;
+
 void setup()
 {
   //pinMode(9, OUTPUT);  // this pin will pull the HC-05 pin 34 (key pin) HIGH to switch module to AT mode
@@ -39,12 +41,13 @@ void setup()
   pinMode(12, OUTPUT);
   digitalWrite(12, HIGH);
 
-    myservo.write(90);
-    delay(1000);
-    myservo.write(180);
-    delay(3000);
-    myservo.write(90);
-    //while(1);
+  lastTime = millis();
+//    myservo.write(90);
+//    delay(1000);
+//    myservo.write(180);
+//    delay(3000);
+//    myservo.write(90);
+//    //while(1);
 }
 
 void loop()
@@ -87,35 +90,46 @@ void loop()
 
 /***************** BTOOTH *****************/
   // Read Stuff!!!
-  if (BTSerial.available())
-  {
-    Serial.print("TESTING");
-    for (int i = 0; i < 6; i++)
+//  if (millis() - lastTime > 20000)
+//  {
+//    //scaleSerial.println("x");
+//    scaleSerial.end();    
+//
+//    int btmillis = millis();
+//    while (millis() - btmillis < 3000)
+//    {
+      if (BTSerial.available())
       {
-        while(!BTSerial.available());
-        c = BTSerial.read();
-        servingString += c;
+        Serial.print("TESTING");
+        for (int i = 0; i < 6; i++)
+          {
+            while(!BTSerial.available());
+            c = BTSerial.read();
+            servingString += c;
+          }
+          servingSize = servingString.toFloat();
+          Serial.print("SERVING SIZE");
+          Serial.println(servingSize);
       }
-      servingSize = servingString.toFloat();
-      Serial.print("SERVING SIZE");
-      Serial.println(servingSize);
-  }
+//    }
+//    scaleSerial.println("2");
+//
+//    SoftwareSerial scaleSerial(8,9);    
+//    lastTime = millis();
+//  }
+  
 
 /***************** SERVO *****************/
   if (Serial.available())
   {
-    c = 'p';//Serial.read();
+    c = Serial.read();
     if (c == 'x')
     {
-      for (pos = 0; pos <= 90; pos += 1) { // goes from 0 degrees to 180 degrees
-        // in steps of 1 degree
-        myservo.write(pos);              // tell servo to go to position in variable 'pos'
-        delay(30);                       // waits 15ms for the servo to reach the position
-      }
-      for (pos = 90; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-        myservo.write(pos);              // tell servo to go to position in variable 'pos'
-        delay(30);                       // waits 15ms for the servo to reach the position
-      }
+      //myservo.write(90);
+      //delay(2000);
+      myservo.write(180);
+      delay(2000);
+      myservo.write(90);
     }
   }
 
